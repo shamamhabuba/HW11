@@ -28,6 +28,7 @@ test('post order with correct data should receive code 201', async ({ request })
   })
   // Log the response status and body
   console.log('response status:', response.status())
-  console.log('response body:', await response.json())
+  console.log('response body:', await response.text())
   expect(response.status()).toBe(StatusCodes.OK)
 })
+
