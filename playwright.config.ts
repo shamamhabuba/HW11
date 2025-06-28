@@ -16,7 +16,7 @@ export default defineConfig({
 
   projects: [
     {
-      name: 'API tests',
+      name: 'api-auth tests',
     },
   ],
 
