@@ -31,4 +31,3 @@ test('post order with correct data should receive code 201', async ({ request })
   console.log('response body:', await response.text())
   expect(response.status()).toBe(StatusCodes.OK)
 })
-
