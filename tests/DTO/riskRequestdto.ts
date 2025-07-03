@@ -1,8 +1,8 @@
 export interface RiskRequestDTO {
-  age: number;
-  income: number;
-  loanAmount: number;
-  employmentStatus: string;
+  age: number
+  income: number
+  loanAmount: number
+  employmentStatus: string
 }
 
 export function createRiskRequest(overrides: Partial<RiskRequestDTO> = {}): RiskRequestDTO {
@@ -11,6 +11,6 @@ export function createRiskRequest(overrides: Partial<RiskRequestDTO> = {}): Risk
     income: 4000,
     loanAmount: 1000,
     employmentStatus: 'employed',
-    ...overrides
-  };
+    ...overrides,
+  }
 }
